@@ -21,37 +21,35 @@ export default function Services() {
       <div className="whiteBg" style={{ padding: "60px 0" }}>
         <div className="container">
           <HeaderInfo>
-            <h1 className="font40 extraBold">Our Awesome Services</h1>
-            <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-              <br />
-              labore et dolore magna aliquyam erat, sed diam voluptua.
-            </p>
+            <h1 className="font40 extraBold">About ISBM</h1>
           </HeaderInfo>
           <ServiceBoxRow className="flex">
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="roller"
-                title="Graphic Design"
+                title="Vision"
                 subtitle="ISBM is committed to provide high quality management education through distance learning across the globe. The key benefit is flexibility of learning anytime anywhere. The curriculum combines latest academic knowledge with international competence."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="monitor"
-                title="Web Design"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore."
+                title="Mission"
+                subtitle="ISBM is committed to provide high quality management education through distance learning across the globe. The key benefit is flexibility of learning anytime anywhere. The curriculum combines latest academic knowledge with international competence."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="browser"
-                title="Development"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat."
+                title="Quality Policy"
+                subtitle="We at ISBM are committed to satisfy our students by providing excellent service in the field of education. We do this by carrying out research, consultancy and training to fulfill the needs and expectation of students, business and society at large."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
-              <ServiceBox icon="printer" title="Print" subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor." />
+              <ServiceBox
+                icon="printer"
+                title="Overview"
+                subtitle="ISBM paves a path to early success in life through its fast-track short duration correspondence courses. These courses consist of concepts and case studies that provide broad exposure to relevant business concepts and management specifics." />
             </ServiceBoxWrapper>
           </ServiceBoxRow>
         </div>

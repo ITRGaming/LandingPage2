@@ -229,6 +229,9 @@
   .orangeColor {
     color: #F2B300;
   }
+  .darkpinkColor {
+    color: #b84d88;
+  }
   .lightColor {
     color: #F5F5F5;
   }
@@ -246,7 +249,7 @@
   }
   /* BACKGROUNDS */
   .darkBg {
-    background-color: #0B093B;
+    background-color: #291971;
   }
   .purpleBg {
     background-color: #7620FF;
