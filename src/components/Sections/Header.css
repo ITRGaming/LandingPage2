@@ -1,0 +1,115 @@
+.headerContainer{
+  background-image: url(../../assets/svg/HeaderSvg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.enquiryForm {
+    background-color: #28156F;/* #28156F with 50% opacity */
+    background: linear-gradient(180deg, #672E46 55% , #291971); 
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #28156F;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    width: 400px;
+    max-height: 595px;
+    margin-left: 0.5vh !important;
+    margin-top: 0px !important;
+  }
+  
+  .enquiryForm * {
+    margin-top: 0px !important;
+  }
+  
+  .header{
+    margin: 5px 5px 0px 5px !important;
+  }
+  
+  .title{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif; /* Replace with your preferred font */
+    font-weight: bold;
+    font-size: 28px; /* Adjust font size as needed */
+    letter-spacing: 2px;
+  }
+  
+  .checkbox{
+    display: flex;
+  }
+  
+  .imp{
+    color: #fff;
+    margin-bottom: 0%;
+    font-size: small;
+    text-align: center;
+  }
+  
+  .enquiryForm input::placeholder, .enquiryForm select option, .enquiryForm select {
+    color: #28156F;
+    font-size: medium;
+    font-weight: 500;
+  }
+  
+  .enquiryForm label{
+    color: #fff;
+    font-size: medium;
+  }
+  
+  .enquiryForm input, .enquiryForm select, .customBtn {
+    background-color: #fff;
+    border: none;
+    border-bottom: 2.5px solid #949494 !important;
+    padding: 10px;
+  }
+  
+  .enquiryForm input:hover, .enquiryForm select:hover, .customBtn:hover{
+    background: linear-gradient(90deg, #fff, #dfd7fc);
+  }
+  
+  .enquiryForm input:focus, .enquiryForm select:focus{
+    outline: none !important;
+    box-shadow: 2px 2px 10px #fff;
+    background: linear-gradient(270deg, #dfd7fc, #fff);
+    background-color: #fff;
+  }
+  
+  .enquiryForm button[type="submit"] {
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .enquiryForm button[type="submit"]:focus {
+    box-shadow: 2px 2px 10px #fff;
+  }
+
+  @media (max-width:992px) {
+    .enquiryForm{
+      position: relative;
+      top: 3vh;
+      max-width: 400px;
+      width: 90%;
+      z-index: 0;
+      margin: 0 auto 6vh auto !important;
+      overflow: visible;
+      max-height: max-content;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .enquiryForm{
+      position: relative;
+      top: 3vh;
+      max-width: 400px;
+      width: 90%;
+      z-index: 0;
+      margin: 0 auto;
+      left: 0px;
+      right: 0px;
+      margin-bottom: 5vh;
+      overflow: visible;
+      max-height: max-content;
+    }
+  }

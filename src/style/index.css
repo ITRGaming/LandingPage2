@@ -247,9 +247,15 @@
   .whiteColor {
     color: #fff;
   }
+  .whiteColorImp {
+    color: #fff !important;
+  }
   /* BACKGROUNDS */
   .darkBg {
     background-color: #291971;
+  }
+  .brownBg{
+    background-color: #672E46;
   }
   .purpleBg {
     background-color: #7620FF;

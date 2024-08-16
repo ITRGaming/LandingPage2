@@ -30,9 +30,9 @@ export default function ServiceBox({icon, title, subtitle}) {
 
   return (
     <Wrapper className="flex flexColumn">
-      <IconStyle>{getIcon}</IconStyle>
-      <TitleStyle className="font20 extraBold">{title}</TitleStyle>
-      <SubtitleStyle className="font13">{subtitle}</SubtitleStyle>
+      <IconStyle className="text-center">{getIcon}</IconStyle>
+      <TitleStyle className="font20 extraBold text-center">{title}</TitleStyle>
+      <SubtitleStyle className="font13 text-center">{subtitle}</SubtitleStyle>
     </Wrapper>
   );
 }

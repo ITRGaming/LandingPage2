@@ -1,0 +1,13 @@
+.aboutContainer{
+    background-image: url(../../assets/svg/AboutSvg.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    padding-bottom: 200px;
+}
+
+.heightContainer{
+    min-height: 500px;
+    margin-bottom: 60px;
+}

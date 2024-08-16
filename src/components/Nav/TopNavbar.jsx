@@ -2,13 +2,11 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
 // Components
-import Backdrop from "../Elements/Backdrop";
 // Assets
 import LogoIcon from "../../assets/img/logo.jpg";
 
 export default function TopNavbar() {
   const [y, setY] = useState(window.scrollY);
-  const [sidebarOpen, toggleSidebar] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => setY(window.scrollY));
@@ -20,7 +18,6 @@ export default function TopNavbar() {
 
   return (
     <>
-      {sidebarOpen && <Backdrop toggleSidebar={toggleSidebar} />}
       <Wrapper className="flexCenter animate whiteBg" style={{ height: "100px" }}>
         <NavInner className="container flexSpaceCenter">
           <Link className="pointer flexNullCenter" to="home" smooth={true}>

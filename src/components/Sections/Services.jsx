@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import "./Services.css"
 // Components
 import ClientSlider from "../Elements/ClientSlider";
 import ServiceBox from "../Elements/ServiceBox";
@@ -18,8 +19,8 @@ export default function Services() {
           <ClientSlider />
         </div>
       </div>
-      <div className="whiteBg" style={{ padding: "60px 0" }}>
-        <div className="container">
+      <div className="whiteBg">
+        <div className="container aboutContainer">
           <HeaderInfo>
             <h1 className="font40 extraBold">About ISBM</h1>
           </HeaderInfo>
@@ -53,7 +54,7 @@ export default function Services() {
             </ServiceBoxWrapper>
           </ServiceBoxRow>
         </div>
-        <div className="lightBg">
+        <div className="lightBg heightContainer">
           <div className="container">
             <Advertising className="flexSpaceCenter">
               <AddLeft>
@@ -124,7 +125,7 @@ const HeaderInfo = styled.div`
   }
 `;
 const Advertising = styled.div`
-  margin: 80px 0;
+  margin: 0 0 80px 0;
   padding: 100px 0;
   position: relative;
   @media (max-width: 1160px) {
