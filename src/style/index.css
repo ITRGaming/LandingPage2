@@ -278,3 +278,10 @@
   .whiteBg {
     background-color: #fff;
   }
+
+  .hoverWhite:hover svg,
+  .hoverWhite:hover h2,
+  .hoverWhite:hover p{
+    color: white !important;
+    fill: white;
+  }

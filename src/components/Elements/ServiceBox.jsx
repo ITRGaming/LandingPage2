@@ -13,13 +13,13 @@ export default function ServiceBox({icon, title, subtitle}) {
     case "eye":
       getIcon = <EyeIcon />;
       break;
-    case "monitor":
+    case "goal":
       getIcon = <GoalIcon />;
       break;
-    case "browser":
+    case "quality":
       getIcon = <QualityIcon />;
       break;
-    case "printer":
+    case "overview":
       getIcon = <OverviewIcon />;
       break;
     default:

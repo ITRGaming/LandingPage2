@@ -1,15 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import "./Services.css"
+import "./Services.css";
 // Components
 import ClientSlider from "../Elements/ClientSlider";
 import ServiceBox from "../Elements/ServiceBox";
-import FullButton from "../Buttons/FullButton";
 // Assets
-import AddImage1 from "../../assets/img/add/1.png";
-import AddImage2 from "../../assets/img/add/2.png";
-import AddImage3 from "../../assets/img/add/3.png";
-import AddImage4 from "../../assets/img/add/4.png";
+import AddImage1 from "../../assets/img/add/Newspaper.jpg";
+import AddImage2 from "../../assets/img/add/paper.jpg";
+import AddImage3 from "../../assets/img/add/MGS.jpg";
+import AddImage4 from "../../assets/img/add/award.jpg";
 
 export default function Services() {
   return (
@@ -25,32 +24,33 @@ export default function Services() {
             <h1 className="font40 extraBold">About ISBM</h1>
           </HeaderInfo>
           <ServiceBoxRow className="flex">
-            <ServiceBoxWrapper>
+            <ServiceBoxWrapper className="animate hoverWhite">
               <ServiceBox
-                icon="roller"
+                icon="eye"
                 title="Vision"
                 subtitle="ISBM is committed to provide high quality management education through distance learning across the globe. The key benefit is flexibility of learning anytime anywhere. The curriculum combines latest academic knowledge with international competence."
               />
             </ServiceBoxWrapper>
-            <ServiceBoxWrapper>
+            <ServiceBoxWrapper className="animate hoverWhite">
               <ServiceBox
-                icon="monitor"
+                icon="goal"
                 title="Mission"
                 subtitle="ISBM is committed to provide high quality management education through distance learning across the globe. The key benefit is flexibility of learning anytime anywhere. The curriculum combines latest academic knowledge with international competence."
               />
             </ServiceBoxWrapper>
-            <ServiceBoxWrapper>
+            <ServiceBoxWrapper className="animate hoverWhite">
               <ServiceBox
-                icon="browser"
+                icon="quality"
                 title="Quality Policy"
                 subtitle="We at ISBM are committed to satisfy our students by providing excellent service in the field of education. We do this by carrying out research, consultancy and training to fulfill the needs and expectation of students, business and society at large."
               />
             </ServiceBoxWrapper>
-            <ServiceBoxWrapper>
+            <ServiceBoxWrapper className="animate hoverWhite">
               <ServiceBox
-                icon="printer"
+                icon="overview"
                 title="Overview"
-                subtitle="ISBM paves a path to early success in life through its fast-track short duration correspondence courses. These courses consist of concepts and case studies that provide broad exposure to relevant business concepts and management specifics." />
+                subtitle="ISBM paves a path to early success in life through its fast-track short duration correspondence courses. These courses consist of concepts and case studies that provide broad exposure to relevant business concepts and management specifics."
+              />
             </ServiceBoxWrapper>
           </ServiceBoxRow>
         </div>
@@ -58,20 +58,20 @@ export default function Services() {
           <div className="container">
             <Advertising className="flexSpaceCenter">
               <AddLeft>
-                <h4 className="font15 semiBold">A few words about company</h4>
-                <h2 className="font40 extraBold">A Study of Creativity</h2>
-                <p className="font12">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-                  diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                <h2 className="font40 extraBold">Why ISBM?</h2>
+                <p className="font18">
+                  ISBM paves a path to early success in life by fulfilling the
+                  dreams of our students by providing fast track short duration
+                  correspondence courses consisting of concepts and case studies
+                  that provide broad exposure to relevant business concepts and
+                  management specifics thus providing impeccable service in the
+                  field of management education. We believe in carrying out
+                  research, consultancy and training to fulfill the needs and
+                  expectation of students, business and society at large. We aim
+                  to do this with a high degree of social sensitivity through
+                  innovation and focus on continual reviewing of institutional
+                  processes by involvement of faculties, students and staff.
                 </p>
-                <ButtonsRow className="flexNullCenter" style={{ margin: "30px 0"}}>
-                  <div style={{ width: "190px" }}>
-                    <FullButton title="Get Started" action={() => alert("clicked")} />
-                  </div>
-                  <div style={{ width: "190px", marginLeft: "15px" }}>
-                    <FullButton title="Contact Us" action={() => alert("clicked")} border />
-                  </div>
-                </ButtonsRow>
               </AddLeft>
               <AddRight>
                 <AddRightInner>
@@ -112,12 +112,21 @@ const ServiceBoxRow = styled.div`
 const ServiceBoxWrapper = styled.div`
   width: 20%;
   margin-right: 5%;
-  padding: 80px 0;
+  margin-top: 20px;
+  padding: 30px 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+  box-shadow: 6px 6px 8px 4px rgba(136, 144, 195, 0.5);
+  background-color: #fff4f9;
   @media (max-width: 860px) {
     width: 100%;
     text-align: center;
     padding: 40px 0;
-  }
+    }
+    :hover {
+      border: 2px solid white;
+      background-color: #6e2f52;
+    }
 `;
 const HeaderInfo = styled.div`
   @media (max-width: 860px) {
@@ -135,11 +144,6 @@ const Advertising = styled.div`
     flex-direction: column;
     padding: 0 0 30px 0;
     margin: 80px 0 0px 0;
-  }
-`;
-const ButtonsRow = styled.div`
-  @media (max-width: 860px) {
-    justify-content: space-between;
   }
 `;
 const AddLeft = styled.div`
@@ -163,7 +167,6 @@ const AddLeft = styled.div`
 const AddRight = styled.div`
   width: 50%;
   position: absolute;
-  top: -70px;
   right: 0;
   @media (max-width: 860px) {
     width: 80%;
@@ -200,7 +203,7 @@ const AddImgWrapp2 = styled.div`
   }
 `;
 const AddImgWrapp3 = styled.div`
-  width: 20%;
+  width: 40%;
   margin-left: 40%;
   img {
     width: 100%;
@@ -212,7 +215,7 @@ const AddImgWrapp3 = styled.div`
   }
 `;
 const AddImgWrapp4 = styled.div`
-  width: 30%;
+  width: 40%;
   margin: 0 5%auto;
   img {
     width: 100%;

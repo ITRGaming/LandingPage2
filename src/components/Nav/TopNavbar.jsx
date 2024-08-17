@@ -18,7 +18,7 @@ export default function TopNavbar() {
 
   return (
     <>
-      <Wrapper className="flexCenter animate whiteBg" style={{ height: "100px" }}>
+      <Wrapper className="flexCenter animate whiteBg" style={{ height: "115px" }}>
         <NavInner className="container flexSpaceCenter">
           <Link className="pointer flexNullCenter" to="home" smooth={true}>
             <img src={LogoIcon} alt="logo" />
@@ -39,6 +39,7 @@ const Wrapper = styled.nav`
 const NavInner = styled.div`
   position: relative;
   height: 100%;
+  padding-bottom: 15px;
 `;
 
 
