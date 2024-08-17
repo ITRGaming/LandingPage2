@@ -186,10 +186,11 @@ export default function Header() {
               <QuotesIcon />
             </QuotesWrapper>
             <div>
-              <p className="font15 whiteColor">
-                <em>Friends, such as we desire, are dreams and fables. Friendship demands the ability to do without it.</em>
-              </p>
-              <p className="font13 darkpinkColor textRight" style={{marginTop: '10px'}}>Ralph Waldo Emerson</p>
+              <h2 className="whiteColor">
+                <em>Welcome to ISBM!</em>
+              </h2>
+              <p className="font15 darkpinkColor textRight" style={{marginTop: '10px'}}>
+              "Your first step towards right career!"</p>
             </div>
           </QuoteWrapper>
           <DotsWrapper>
